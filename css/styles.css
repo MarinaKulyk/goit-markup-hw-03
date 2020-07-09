@@ -149,7 +149,6 @@
     display: flex;    
     margin: 0;
 }
-
 .superiority-item {
     width: 270px;
 }
@@ -176,6 +175,8 @@
 }
 /* Имена секций */
 .section-titel {
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
@@ -184,7 +185,23 @@
     color: var(--main-titel-color);
 }
 /* Секция Работы */
+.work {
+    height: 386px;
+}
+.work-list {
+    display: flex;
+    margin: 0;
+}
+.work-item {
+    display: inline-block;
+    width: 370px;
+    height: 294px;
+}
+.work-item:not(:last-child) {
+    margin-right: 30px;
+}
 .work-text {
+    margin: 0;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
