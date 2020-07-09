@@ -20,14 +20,15 @@
     --backgraund-color: #E5E5E5;
     --backgraund-footer-color: #2F303A;
     --backgraund-team-color: #F5F4FA;
-    --footer-link-color: rgba(255, 255, 255, 0.6)
+    --footer-link-color: rgba(255, 255, 255, 0.6);
+    --main-backgraund-color: #FFFFFF; 
 }
 /* Общие стили */
 .page {
     box-sizing: border-box;
 
     font-family: var(--maint-font);
-    background-color: var(--backgraund-color);
+    background-color: var(--main-backgraund-color);
     color: var(--main-text-color);
 }
 .list {
@@ -60,7 +61,6 @@
 .logo {
     margin-right: 85px;
 }
-
 /* Навигация */
 .nav-list {
     display: flex;
@@ -74,7 +74,6 @@
     display: flex;
     align-items: center;
 }
-
 .nav-link {
     font-weight: 500;
     font-size: 14px;
@@ -88,14 +87,13 @@
 .contacts-link:focus  {
     color: var(--akcent-color);
 }
-
 .contacts-link {
     color: var(--main-text-color);
 }
-
 .header .container {
     display: flex;
     align-items: center;
+    height: 80px;
 }
 .contacts {
     margin-left: auto;
@@ -104,31 +102,64 @@
     margin-right: 30px;
 }
 
-
 /* Секция Герой */
+.hero {
+    height: 600px;
+    margin-bottom: 94px;
+    text-align: center;
+    /* Временный фон для контраста заголовка */
+    background-color: var(--backgraund-color);
+}
 .hero-titel {
+    margin: 0;
+    padding-top: 200px;
+    margin-bottom: 30px;
+       
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-titel-color);
 }
 .hero-button {
+    display: inline-block;   
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+   
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
+       letter-spacing: 0.06em;
     background-color: var(--akcent-color);
     color: var(--secondary-titel-color);
 }
+
+.section {
+    margin-bottom: 94px;
+}
 /* Секция Преимущества */
+.superiority {
+    height: 250px;
+}
+.superiority-list {
+    display: flex;    
+    margin: 0;
+}
+
+.superiority-item {
+    width: 270px;
+}
+.superiority-item:not(:last-child) {
+    margin-right: 30px;
+}
 .superiority-titel {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
