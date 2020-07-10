@@ -230,16 +230,18 @@
 .team-img {
     margin-bottom: 30px;
 }
-.team-social-list {
+.team-social-list,
+.footer-social-list {
     display: flex;
     align-items: center;
-     padding-left: 0;
-     margin-right: 0; 
+     padding: 0;
+     margin: auto; 
      width: 206px;
      height: 44px;
      justify-content: center;
 }
-.team-social-item:not(:last-child) {
+.team-social-item:not(:last-child),
+.footer-social-item:not(:last-child) {
     margin-right: 10px;
 }
 .team-name {
@@ -280,6 +282,8 @@
 .footer {
     display: flex;
     padding-top: 60px;
+    align-items: baseline;
+    height: 252px;
 }
 .footer-all{
     background-color: var(--backgraund-footer-color);
@@ -299,10 +303,24 @@
     letter-spacing: 0.03em;
     color: var(--secondary-titel-color);
 }
+.address-text,
+.footer-mail {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+.address {
+    margin-right: 94px;
+}
 .footer-contacts {
     color: var(--footer-link-color);
-    }
+}
+ .footer-social-list {
+    justify-content: flex-start;
+    margin-top: 20px;
+}   
 .social-text {
+    /* правильно тут мало б бути margin-bottom: 20px;
+    але чомусь не спрацьовує, тому задано margin-top для настурного елементу; */
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -314,6 +332,9 @@
 .social-link:hover {
     background-color: var(--akcent-color);
 }
+
+
+
 /* Фильтр портфолио */
 .button-name {
     font-weight: 500;
