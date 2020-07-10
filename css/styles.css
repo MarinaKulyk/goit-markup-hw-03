@@ -33,8 +33,6 @@
     box-sizing: inherit;
 }
 .page {
-    /* box-sizing: border-box; */
-
     font-family: var(--maint-font);
     background-color: var(--main-backgraund-color);
     color: var(--main-text-color);
@@ -145,7 +143,6 @@
     background-color: var(--akcent-color);
     color: var(--secondary-titel-color);
 }
-
 .section {
     margin-bottom: 94px;
 }
@@ -163,8 +160,11 @@
 .superiority-item:not(:last-child) {
     margin-right: 30px;
 }
+.superiority-img {
+    margin-bottom: 30px;
+}
 .superiority-titel {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 10px;
 
     font-weight: bold;
@@ -220,6 +220,32 @@
     color: var(--secondary-titel-color);
 }
 /* Секция Команда */
+.team-list {
+    display: flex;
+    margin: 0;
+}
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+.team-img {
+    margin-bottom: 30px;
+}
+.team-social-list {
+    display: flex;
+    align-items: center;
+     padding-left: 0;
+     margin-right: 0; 
+     width: 206px;
+     height: 44px;
+     justify-content: center;
+}
+.team-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+.team-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 .team-name,
 .team-text {
     font-weight: 500;
@@ -230,15 +256,36 @@
     color: var(--main-titel-color);
 }
 .team-text {
+    margin-top: 0;
+    margin-bottom: 16px;
     font-weight: 400;
     color: var(--main-text-color);
 }
 .team {
     background-color: var(--backgraund-team-color);
 }
+/* Секция Клиенты */
+.client-list {
+    display: flex;
+    padding-left: 0;
+     justify-content: center;
+     margin-top: 0;
+     margin-bottom: 0;
+}
+.client-item:not(:last-child) {
+    margin-right: 30px;
+
+}
 /* Подвал */
-.footer{
+.footer {
+    display: flex;
+    padding-top: 60px;
+}
+.footer-all{
     background-color: var(--backgraund-footer-color);
+}
+.footer-logo {
+    margin-bottom: 20px;
 }
 .footer-logo-link {
     color: var(--secondary-titel-color);
