@@ -24,8 +24,16 @@
     --main-backgraund-color: #FFFFFF; 
 }
 /* Общие стили */
-.page {
+.html {
     box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.page {
+    /* box-sizing: border-box; */
 
     font-family: var(--maint-font);
     background-color: var(--main-backgraund-color);
