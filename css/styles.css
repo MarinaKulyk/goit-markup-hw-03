@@ -47,6 +47,9 @@
 .link {
     text-decoration: none;
 }
+.section {
+    padding-bottom: 94px;
+}
 /* Контейнер */
 .container {
     width: 1170px;
@@ -72,7 +75,6 @@
     margin-right: 85px;
 }
 /* Навигация */
-
  .nav-item:not(:last-child) { 
     margin-right: 50px;
     padding-left: 0;
@@ -112,12 +114,10 @@
 .client-item:not(:last-child) {
     margin-right: 30px;
 }
-
 /* Секция Герой */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
     text-align: center;
     /* Временный фон для контраста заголовка */
     background-color: var(--backgraund-color);
@@ -148,17 +148,10 @@
     background-color: var(--akcent-color);
     color: var(--secondary-titel-color);
 }
-.section {
-    margin-bottom: 94px;
-}
 /* Секция Преимущества */
-/* .superiority-list {
-    display: flex;    
-    margin: 0;
-    padding: 0;
-} */
-.superiority-item {
-    width: 270px;
+.superiority,
+.client {
+    padding-top: 94px;
 }
 .superiority-ikons {
     width: 270px;
@@ -170,12 +163,6 @@
     justify-content: center;
     align-items: center;
 }
-/* .superiority-item:not(:last-child) {
-    margin-right: 30px;
-} */
-/* .superiority-img {
-   margin-bottom: 30px; 
-} */
 .superiority-titel {
     margin-top: 0;
     margin-bottom: 10px;
@@ -208,22 +195,13 @@
     color: var(--main-titel-color);
 }
 /* Секция Чем мы занимаемся */
-/* .work-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-} */
 .work-img {
     display: block;
 }
 .work-item {
     display: inline-block;
     width: 370px;
-    height: 294px;
 }
-/* .work-item:not(:last-child) {
-    margin-right: 30px;
-} */
 .work-text {
     margin: 0;
     font-weight: bold;
@@ -236,15 +214,6 @@
     color: var(--secondary-titel-color);
 }
 /* Секция Команда */
-/* .team-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-} */
-/* .team-item:not(:last-child) {
-    margin-right: 30px;
-} */
-
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
@@ -297,15 +266,6 @@
     padding-bottom: 94px;
 }
 /* Секция Клиенты */
-/* .client-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-} */
-/* .client-item:not(:last-child) {
-    margin-right: 30px; 
-} */
 .client-link {
     display: flex;
     width: 170px;
@@ -323,14 +283,12 @@
 /* Подвал */
 .footer {
     display: flex;
-    
     align-items: baseline;
 }
 .footer-all{
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--backgraund-footer-color);
-
 }
 .footer-logo {
     margin-bottom: 20px;
@@ -377,6 +335,7 @@
     color: var(--secondary-titel-color);
 }
 
+
 /* Фильтр портфолио */
 .filters-nav {
     width: 611px;
@@ -389,7 +348,6 @@
 .button-link:not(:last-child) {
 margin-right: 8px;
 }
-
 .button-name {
     border: none;
     border-radius: 4px;
